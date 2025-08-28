@@ -1,3 +1,6 @@
+#  LLMs are not relevant anymore 
+# These days we use chatmodels 
+
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
