@@ -1,0 +1,29 @@
+# I also need to create one langgraph.json file because it is the requirement of LangSmith
+
+
+# langgraph.json
+# {
+#   "dependencies":["."], # Where dot refers to the current directory.
+#  All that are in my current directry that are all my dependency files 
+#   "graphs":{ # It asks for a key related to graphs where my graph is basically there?
+#  Here we need to mention all that file names that are imp for the graph  
+#     "openai_agent":"./openai_agent.py:agent" #This agent is defined in opennai._agent.py
+#   },
+#   "env":"../.env"
+# Double dot means go to the parent directory and this dot env is my dependencies
+# }
+
+# The best part is that when i write the command. It will just going to pickup all 
+# the information from that particular dependencies and it is going to execute.
+
+
+# for langgraph studio i need to  use very imp library => langgraph-cli[inmem] -> This will
+#  actually create my api
+
+
+# Now inorder to run this i will open my terminal and move to
+#  6-Debugging where we have openai_agent.py file 
+
+# and write in terminal => langgraph dev
+
+# To end this you need to press control c in terminal 
