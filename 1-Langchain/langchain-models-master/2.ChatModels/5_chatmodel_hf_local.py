@@ -9,7 +9,7 @@ llm = HuggingFacePipeline.from_model_id(
     pipeline_kwargs=dict(
         temperature=0.5,
         max_new_tokens=100
-        # we will only get 100 tokens
+        # Here we will only get 100 tokens in output
     )
 )
 model = ChatHuggingFace(llm=llm)
@@ -18,4 +18,4 @@ result = model.invoke("When did Trump elected for second term")
 
 print(result.content)
 
-# First dwnload pytorch then it will work 
+# First download pytorch then it will work 
