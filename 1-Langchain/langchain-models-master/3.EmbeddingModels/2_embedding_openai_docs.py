@@ -1,3 +1,5 @@
+#  Working 
+
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 
@@ -10,6 +12,7 @@ documents = [
     "Kolkata is the capital of West Bengal",
     "Paris is the capital of France"
 ]
+#  the above documents means the multiple documents 
 
 result = embedding.embed_documents(documents)
 

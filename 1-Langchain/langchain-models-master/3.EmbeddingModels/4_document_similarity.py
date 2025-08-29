@@ -1,3 +1,5 @@
+# Working 
+
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
@@ -22,7 +24,15 @@ query_embedding = embedding.embed_query(query)
 
 scores = cosine_similarity([query_embedding], doc_embeddings)[0]
 
+# it  will give you the similarity scores between the two vectors. Here scores will be a new 2D vector
+
+#  In cosine similarity both the values should be 2D list 
+#  Here we made query_embedding the 2D list by [query_embedding]
+
 index, score = sorted(list(enumerate(scores)),key=lambda x:x[1])[-1]
+
+#  sorting on the basis of second number 
+#  Sorted in assending order 
 
 print(query)
 print(documents[index])

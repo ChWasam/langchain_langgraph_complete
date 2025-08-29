@@ -1,4 +1,9 @@
+# Working 
+
+import os 
 from langchain_huggingface import HuggingFaceEmbeddings
+
+os.environ['HF_HOME'] = 'D:/huggingface_cache'
 
 embedding = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
 
