@@ -27,6 +27,14 @@ scikit-learn
 
 
 
+# ---------------------------------
+# PyTorch and Related Libraries
+
+torch
+torchvision
+torchaudio
+
+# -------------------------------
 
 langchain-community
 bs4

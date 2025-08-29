@@ -9,10 +9,13 @@ llm = HuggingFacePipeline.from_model_id(
     pipeline_kwargs=dict(
         temperature=0.5,
         max_new_tokens=100
+        # we will only get 100 tokens
     )
 )
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("What is the capital of India")
+result = model.invoke("When did Trump elected for second term")
 
 print(result.content)
+
+# First dwnload pytorch then it will work 
