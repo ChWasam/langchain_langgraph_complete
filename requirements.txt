@@ -43,6 +43,12 @@ sentence-transformers
 
 # -------------------------------
 
+# ---------------------------------
+# streamlit related
+
+streamlit
+
+# -------------------------------
 langchain-community
 bs4
 faiss-cpu 
